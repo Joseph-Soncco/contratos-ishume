@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contrato de Servicio - Ishume</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Pacifico&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="form-container no-print">
+    <h1>Generador de Contratos</h1>
+    <button id="generatePdf">Generar PDF</button>
+  </div>
+
+  <div class="contrato" id="contrato">
+    <!-- HEADER BICOLOR -->
+    <div class="header">
+      <div class="header-left">
+        <img src="img/logo-3d.png" alt="Ishume Logo" class="logo">
+      </div>
+      <div class="header-right">
+        <div class="name">XIOMARA TASAYCO H.</div>
+        <div class="position">GERENTA GENERAL</div>
+      </div>
+    </div>
+
+    <!-- CONTACTO -->
+    <div class="contacto">
+      <div class="contacto-title">CONTACTO:</div>
+      <div><span class="icon">📞 Teléfono: </span><span class="editable-cont" contenteditable>991157028</span></div>
+      <div><span class="icon">✉️ Correo: </span><span class="editable-cont"
+          contenteditable>IshumeAgencia@hotmail.com</span></div>
+    </div>
+
+    <!-- TITULO FECHA -->
+    <div class="titulo">
+      <span>CHINCHA</span>
+      <span class="editable fecha" contenteditable>05</span>
+      <span>DE</span>
+      <select class="mes">
+        <option value="ENERO">ENERO</option>
+        <option value="FEBRERO">FEBRERO</option>
+        <option value="MARZO">MARZO</option>
+        <option value="ABRIL">ABRIL</option>
+        <option value="MAYO" selected>MAYO</option>
+        <option value="JUNIO">JUNIO</option>
+        <option value="JULIO">JULIO</option>
+        <option value="AGOSTO">AGOSTO</option>
+        <option value="SEPTIEMBRE">SEPTIEMBRE</option>
+        <option value="OCTUBRE">OCTUBRE</option>
+        <option value="NOVIEMBRE">NOVIEMBRE</option>
+        <option value="DICIEMBRE">DICIEMBRE</option>
+      </select>
+      <span>DEL</span>
+      <span class="editable anio" contenteditable>2025</span>
+    </div>
+
+    <!-- DATOS DEL CLIENTE -->
+    <div class="datos">
+      <div class="row">
+        <label>Señor(a):</label><span class="editable" contenteditable>Heidy Mansilla</span>
+        <label>Celular:</label><span class="editable" contenteditable>926256574 - 924594785</span>
+      </div>
+      <div class="row">
+        <label>Dirección:</label><span class="editable full" contenteditable>I.E.P. 'VIRGEN DE LA MEDALLA
+          MILAGROSA'</span>
+      </div>
+      <div class="row">
+        <label>Evento:</label><span class="editable" contenteditable>Promoción</span>
+      </div>
+      <div class="row">
+        <label>Servicio:</label><span class="editable" contenteditable>Cuadro y video para promoción</span>
+      </div>
+      <div class="row">
+        <label>Proforma:</label><span class="editable full" contenteditable>Paquete de 205.00 - 29 Alumnos - Book
+          Giratorio</span>
+      </div>
+      <div class="row">
+        <label>Fecha del evento:</label><span class="editable" contenteditable></span>
+        <label>Hora:</label><span class="editable" contenteditable></span>
+      </div>
+      <div class="row checkboxes">
+        <label><input type="checkbox" checked> Fotografía</label>
+        <label><input type="checkbox"> Cuadro</label>
+        <label>Subir a la página: <input type="checkbox" checked> SI <input type="checkbox"> NO</label>
+      </div>
+      <div class="row payment-row">
+        <div class="payment-group">
+          <label>Monto total:</label>
+          <span class="editable-mon" contenteditable>S/.5945</span>
+        </div>
+        <div class="payment-group">
+          <label>A cuenta:</label>
+          <span class="editable-mon" contenteditable>S/.200</span>
+        </div>
+        <div class="payment-group">
+          <label>Saldo:</label>
+          <span class="editable-mon" contenteditable>S/.5745</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTNOTE -->
+    <div class="footnote" contenteditable>
+      OBSEQUIO PARA EL DOCENTE Y TARJETA DE INVITACIÓN VIRTUAL (SE LES DESCONTO 10 SOLES DE MONTO TOTAL)
+    </div>
+
+    <!-- CONDICIONES -->
+    <div class="condiciones">
+      <div class="cond-title">CONDICIONES:</div>
+      <ul>
+        <li>Queda especificado que la empresa no se responsabiliza por la suspensión del evento, por corte del fluido
+          eléctrico, entre otros.</li>
+        <li>La cancelación es del 50% del importe del total al firmar el contrato y el 50% restante el día del evento.
+        </li>
+        <li>Si Ud. no cumplise con la cancelación del contrato, el día de la entrega de los productos se perderá
+          automáticamente, el adelanto que Ud. dia.</li>
+        <li>Queda a su responsabilidad los viáticos del personal del evento, según acuerdo con la empresa.</li>
+        <li>La movilización del personal es previo acuerdo con la empresa.</li>
+      </ul>
+      <div class="alert">* DESPUÉS DE SER ENTREGADO EL MATERIAL, EL CLIENTE TIENE 1 SEMANA<br>PARA QUE PUEDA REALIZAR
+        ALGÚN RECLAMO O CAMBIO, PASANDO<br>LA SEMANA NO HAY RECLAMO ALGUNO*</div>
+    </div>
+
+    <!-- FIRMAS -->
+    <div class="firmas">
+      <div class="firma-item">
+        <span class="label">FIRMA DEL CLIENTE:</span>
+        <span class="line"></span>
+      </div>
+      <div class="firma-item">
+        <span class="label">FIRMA DEL SERVIDOR:</span>
+        <span class="signature">Xiomara</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

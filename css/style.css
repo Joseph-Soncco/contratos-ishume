@@ -1,0 +1,351 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.no-print {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#generatePdf {
+  background-color: #ff8600;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+#generatePdf:hover {
+  background-color: #e68a00;
+}
+
+/* Contenedor */
+.contrato {
+  width: 794px;
+  margin: 0 auto;
+  position: relative;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.header {
+  display: flex;
+  height: 140px;
+}
+
+.header-left {
+  flex: 1;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-left img.logo {
+  max-height: 80px;
+  width: auto;
+}
+
+.header-right {
+  flex: 1;
+  background: #ff8600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  padding-right: 24px;
+}
+
+.header-right .name {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.header-right .position {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 4px;
+}
+
+/* Contacto */
+.contacto {
+  padding: 16px 24px;
+}
+
+.contacto-title {
+  font-size: 25px;
+  font-weight: 800;
+}
+
+.contacto div {
+  margin-bottom: 4px;
+}
+
+.contacto .icon {
+  margin-right: 8px;
+}
+
+.editable-cont {
+  display: inline-block;
+  min-width: 100px;
+  padding: 2px 4px;
+  min-height: 18px;
+}
+
+.editable {
+  display: inline-block;
+  border-bottom: 1px solid #000;
+  padding: 2px 4px;
+  min-height: 18px;
+}
+
+/* Título fecha */
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 8px 0;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.titulo span {
+  text-transform: uppercase;
+}
+
+.titulo .editable.fecha {
+  width: 40px;
+  text-align: center;
+}
+
+.titulo .mes {
+  border: none;
+  border-bottom: 2px solid #000;
+  background: transparent;
+  font-size: 22px;
+  font-weight: 700;
+  padding: 0 5px;
+  min-width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.titulo .editable.anio {
+  width: 80px;
+  text-align: center;
+}
+
+/* Datos */
+.datos {
+  padding: 0 16px;
+}
+
+.row {
+  display: flex;
+  gap: 4px;
+  /* reducido */
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.row label {
+  width: auto;
+  margin-right: 4px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.row .editable {
+  flex: 1;
+  /* ahora ocupa todo el espacio restante */
+  min-width: 0;
+}
+
+/* Checkboxes y pagos */
+.checkboxes {
+  justify-content: flex-start;
+}
+
+.checkboxes label {
+  margin-right: 24px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.checkboxes input {
+  margin-right: 6px;
+}
+
+.payment-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.payment-group {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  flex: 1;
+}
+
+.payment-group label {
+  min-width: 70px;
+  white-space: nowrap;
+}
+
+.payment-group .editable-mon {
+  flex: 1;
+  border-bottom: 1px solid #000;
+}
+
+/* Footnote */
+.footnote {
+  font-size: 10px;
+  font-weight: 600;
+  padding: 4px 24px;
+  margin-top: -4px;
+}
+
+/* Condiciones */
+.condiciones {
+  padding: 0 24px;
+  margin-top: 4px;
+}
+
+.cond-title {
+  font-size: 25px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.condiciones ul {
+  list-style: disc inside;
+  margin-bottom: 8px;
+}
+
+.condiciones ul li {
+  font-size: 15px;
+  margin-bottom: 8px;
+}
+
+.alert {
+  font-size: 15px;
+  color: #c03000;
+  font-weight: 700;
+  text-align: center;
+  margin: 15px 0 50px;
+}
+
+/* Firmas estilizadas */
+.firmas {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 24px;
+  margin: 16px 0 80px;
+}
+.firmas .firma-item {
+  display: flex;
+  align-items: center;
+  width: 45%;
+}
+
+/* Etiqueta */
+.firmas .label {
+  font-weight: 600;
+  font-size: 14px;
+  white-space: nowrap;
+  margin-right: 8px;
+}
+
+/* Línea para Firma Cliente */
+.firmas .line {
+  flex: 1;
+  border-bottom: 1px solid #000;
+  height: 0;
+}
+
+/* Firma en cursiva sobre línea para el servidor */
+.firmas .signature {
+  display: inline-block;
+  font-family: 'Pacifico', cursive;
+  font-size: 16px;
+  border-bottom: 1px solid #000;
+  padding: 0 8px;
+}
+
+/* Footer shapes */
+.footer-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  height: 100px;
+  background: #ff8600;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.footer-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  height: 100px;
+  background: #000;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+/* PDF mode */
+.pdf-mode .no-print {
+  display: none !important;
+}
+
+.pdf-mode .editable,
+.pdf-mode .mes {
+  border-bottom: none !important;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+
+  body {
+    padding: 0;
+    background: #fff;
+  }
+
+  .contrato {
+    box-shadow: none;
+    margin: 0;
+    width: 100%;
+  }
+}
