@@ -220,7 +220,7 @@ body {
 }
 
 .payment-group .editable-mon {
-  flex: 1;
+  flex: 2;
   border-bottom: 1px solid #000;
 }
 
@@ -256,7 +256,7 @@ body {
 
 .alert {
   font-size: 15px;
-  color: #c03000;
+  color: #ff4000;
   font-weight: 700;
   text-align: center;
   margin: 15px 0 50px;
